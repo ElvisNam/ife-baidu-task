@@ -1,6 +1,6 @@
 /* task7 CSS Document */
 
-body, div, ul, li, a, img, span, h2, h3, h4, p {
+body, div, ul, li, a, img, span, h1, h2, h3, h4, p {
 	margin: 0;
 	padding: 0;
 	font-family: "黑体";
@@ -18,12 +18,23 @@ a:hover {
 img {
 	border: none;
 }
+:focus {
+	outline: none;
+}
 
+body {
+	min-width: 1280px;
+}
 #nav {
+	width: 100%;
+	min-width: 1280px;
 	height: 56px;
 	padding-left: 59px;
 	background-color: #fff;
-	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
 }
 
 /* nav logo part */
@@ -236,6 +247,7 @@ img {
 
 /* #activity part */
 #activity {
+	min-width: 1055px;
 	height: 605px;
 	background-color: #f7f7f7;
 	padding-top: 101px;
@@ -278,3 +290,334 @@ img {
 	margin-top: 8px;
 }
 
+/* #details part */
+#details{
+	width: 100%;
+	height: 566px;
+	position: relative;
+}
+#detLeft {
+	height: 566px;
+	width: 850px;
+	border-left: 1px solid #e3e8e8;
+	background: url("images/det_bg.jpg") no-repeat;
+	float: left;
+	position: relative;
+}
+#detLeft h3 {
+	/* !!! */
+	font: 50px/50px "Microsoft Yahei";
+	color: #fff;
+	position: absolute;
+	left: 352px;
+	top: 132px;
+}
+#detLeft h1 {
+	font: 158px/158px "Microsoft Yahei";
+	color: #fff;
+	position: absolute;
+	left: 240px;
+	top: 191px;
+}
+#detLeft p {
+	font: 22px/22px "Microsoft Yahei";
+	color: #fff;
+	position: absolute;
+	left: 348px;
+	top: 348px;
+}
+#detLeft p:nth-of-type(2) {
+	left: 368px;
+	top: 392px;
+}
+#detRight {
+	height: 566px;
+	background-color: #fff;
+	float: left;
+	position: relative;
+}
+#detRight .detAngle {
+	width: 22px;
+	height: 28px;
+	margin-top: -14px;
+	background: url("images/det_angle.png") no-repeat;
+	position: absolute;
+	left: -22px;
+	top: 50%;
+}
+#detRight h4 {
+	font: 20px/20px "Microsoft Yahei";
+	font-weight: bold;
+	color: #323333;
+	/* !!! */
+	position: relative;
+	top: 165px;
+	left: 162px;
+}
+#detRight h4 span {
+	color: #e74f4d;
+}
+#detRight p {
+	width: 288px;
+	font: 12px/30px "Microsoft Yahei";
+	color: #bdbdbd;
+	position: absolute;
+	left: 71px;
+	top: 207px;
+}
+#detMore {
+	width: 104px;
+	height: 31px;
+	border: 1px solid #e5676a;
+	background-color: #fff;
+	font: 12px/31px "Microsoft Yahei";
+	color: #e6797c;
+	position: absolute;
+	left: 162px;
+	top: 368px;
+	cursor: pointer;
+}
+#detNav {
+	width: 100%;
+	position: absolute;
+	left: 185px;
+	top: 426px;
+}
+#detNav li {
+	width: 10px;
+	height: 10px;
+	border: 1px solid #aeaeae;
+	border-radius: 50%;
+	float: left;
+	margin-right: 14px;
+	cursor: pointer;
+}
+#detNav li:hover {
+	background-color: #aeaeae; 
+}
+
+/* #findMore part */
+#findMore {
+	height: 521px;
+	width: 100%;
+	position: relative;
+}
+#leftMore, #rightMore {
+	height: 521px;
+	width: 425px;
+	float: left;
+}
+#leftMore p, #rightMore p {
+	font: 21px/31px "黑体";
+	text-align: center;
+} 
+#leftMore p:nth-of-type(1), #rightMore p:nth-of-type(1){
+	margin-top: 168px;
+}
+#leftMore p:nth-of-type(3), #rightMore p:nth-of-type(3) {
+	height: 48px;
+}
+#leftMore {
+	border-left: 1px solid #f9d4d3;
+	background-color: #e7504d;
+	color: #ffffff;
+}
+#rightMore {
+	background-color: #fff;
+	color: #e7504d;
+	position: relative;
+}
+#leftMore input, #rightMore input {
+	width: 167px;
+	height: 41px;
+	margin-left: 128px;
+	font: 21px/41px "黑体";
+	cursor: pointer;
+}
+#leftMore input {
+	background-color: #e74f4d;
+	border: 1px solid #fff;
+	color: #fff;
+}
+#rightMore input {
+	background-color: #fff;
+	border: 1px solid #e95b58;
+	color: #e95b58;
+}
+#rightMore .detAngle {
+	width: 24px;
+	height: 30px;
+	margin-top: -15px;
+	background: url("images/findMore_angle.png") no-repeat;
+	position: absolute;
+	top: 50%;
+	right: -24px;
+}	
+#findImg {
+	height: 521px;
+	margin-left: 851px;
+	background: url("images/finMore_bg.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+
+/* #join part */
+#join {
+	height: 750px;
+	width: 100%;
+}
+#header {
+	width: 100%;
+	height: 182px;
+	padding-top: 118px;
+	background-color: #fff;
+}
+#header h3 {
+	/*margin-left: 556px;*/
+	font: 20px/20px "黑体";
+	color: #323333;
+	text-align: center;
+}
+#header p:nth-of-type(1) {
+	width: 30px;
+	margin: 0 auto;
+	/*margin-left: 624px;*/
+	text-align: center;
+}
+#header p:nth-of-type(2) {
+	margin-top: 3px;
+	font: 12px/18px "Microsoft Yahei";
+	color: #b7b7b7;
+	text-align: center;
+}
+#joinLeft {
+	padding-left: 138px;
+	/* add 30px(right) */
+	padding-right: 107px;
+	height: 448px;
+	width: 287px;
+	float: left;
+	background-color: #fff;
+}
+#joinLeft h4 {
+	font: 14px/21px "黑体";
+	color: #666160;
+	margin-bottom: 18px;
+}
+#joinLeft p {
+	font: 12px/22px "宋体";
+	color: #9d9b9a;
+}
+#joinLeft .joinMore {
+	margin-top: 5px;
+	margin-left: 246px;
+	margin-bottom: 36px;
+	font: 6px/6px "宋体";
+	color: #9d9b9a;
+	cursor: pointer;
+}
+#joinLeft .joinMore:nth-of-type(2) {
+	margin-bottom: 20px;
+}
+#joinLeft .joinMore img{
+	display: inline-block;
+	margin-right: 7px;
+}
+#joinRight {
+	height: 448px;
+	margin-left: 502px;
+}
+#joinRight input {
+	width: 294px;
+	height: 40px;
+	margin-right: 20px;
+	margin-bottom: 15px;
+	padding-left: 16px;
+	font: 11px/40px "Microsoft Yahei";
+	color: #837f80;
+	border: none;
+	background-color: #ededee;
+}
+#joinRight textarea {
+	width: 630px;
+	height: 116px;
+	margin-bottom: 15px;
+	padding-left: 16px;
+	padding-top: 5px;
+	font: 11px/21px "Microsoft Yahei";
+	color: #837f80;
+	border: none;
+	background-color: #ededee;
+	/* !!! */
+	resize: none;
+}
+#joinRight input:last-of-type {
+	width: 651px;
+	height: 40px;
+	color: #323333;
+	text-align: center;
+}
+
+/* #contact part */
+#contact {
+	width: 100%;
+	height: 274px;
+	padding-top: 84px;
+	background-color: #32353e;
+}
+#contact h3 {
+	font: 21px/36px "黑体";
+	color: #fff;
+	text-align: center;
+}
+#contact p {
+	margin-bottom: 28px;
+	font: 12px/18px "Microsoft Yahei";
+	color: #f5f5f5;
+	text-align: center;
+}
+#email {
+	width: 420px;
+	height: 39px;
+	margin: 0 auto;
+	padding-left: 9px;
+	padding-right: 80px;
+	border: 1px solid #a5a6aa;
+	background-color: #fff;
+	font: 12px/41px "Microsoft Yahei";
+	color: #aaaaaa;
+	position: relative;
+}
+#email input {
+	height: 41px;
+	width: 80px;
+	background-color: #6f7178;
+	border: none;
+	font: 15px/41px "Microsoft Yahei";
+	color: #fff;
+	position: absolute;
+	top: -1px;
+	right: -1px;
+}
+#contact #logo {
+	margin-top: 37px;
+	height: 25px;
+	position: relative;
+	float: left;
+	left: 50%;
+}
+#contact #logo li {
+	float: left;
+	margin-right: 26px;
+	position: relative;
+	left: -50%;
+}
+
+/* copyright part */
+#copyright {
+	height: 28px;
+	background-color: #303039;
+	padding-left: 100px;
+	padding-top: 30px;
+	font: 12px/12px "Microsoft Yahei";
+	color: #fff;
+}
