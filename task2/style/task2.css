@@ -1,0 +1,85 @@
+/* 
+ *  ife task2 css document  
+ */
+
+body,
+header, 
+footer,
+aside,
+article,
+div,
+ul, 
+li, 
+p, 
+h1,
+h2,
+h3,
+figure,
+figcaption,
+table {
+	margin: 0;
+	padding: 0;
+	font: 14px "Microsoft Yahei" normal;
+}
+li {
+	list-style: none;
+}
+a {
+	text-align: none;
+}
+a:hover {
+	text-align: none;
+}
+
+
+body {
+	background-color: #dedede;
+}
+
+/* header part */
+header {
+	width: 100%;
+	height: 60px;
+	background-color: #333333;
+	position: relative;
+}
+
+header #titImg {
+	width: 117px;
+	height: 37px;
+	margin-left: 40px;
+	margin-top: 10px;
+	float: left;
+}
+
+header .nav {
+	width: 311px;
+	height: 11px;
+	margin-top: 22px;
+	color: #fff;
+	position: absolute;
+	right: 23px;
+}
+header .nav li {
+	margin-right: 8px;
+	padding-left: 11px;
+	font: 11px/11px "Microsoft Yahei";
+	background: url("../images/header_nav_bg.png") no-repeat 0 4px;
+	display: inline-block;
+}
+header .nav li:last-of-type {
+	margin-right: 0;
+}
+
+/* content part */
+#content {
+	float: left;
+	position: relative;
+	left: 50%;
+}
+#content article {
+	max-width: 1238px;
+	position: relative;
+	left: -50%;
+	background-color: #fff;
+}
