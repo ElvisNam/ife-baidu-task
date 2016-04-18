@@ -24,13 +24,9 @@ table {
 li {
 	list-style: none;
 }
-a {
-	text-align: none;
+a {	
+	color: #0006fd;
 }
-a:hover {
-	text-align: none;
-}
-
 
 body {
 	background-color: #dedede;
@@ -41,7 +37,7 @@ header {
 	width: 100%;
 	height: 60px;
 	background-color: #333333;
-	position: relative;
+	position: relatives;
 }
 
 header #titImg {
@@ -73,13 +69,72 @@ header .nav li:last-of-type {
 
 /* content part */
 #content {
-	float: left;
-	position: relative;
-	left: 50%;
+	padding: 2px 20px 36px 20px;
 }
-#content article {
-	max-width: 1238px;
-	position: relative;
-	left: -50%;
+#content article, #content section {
+	/*max-width: 1238px;*/
+	margin-top: 18px;
+	padding: 27px 27px 36px 19px;
+	border: 1px solid #cecece;
 	background-color: #fff;
+	box-shadow: 1px 1px 1px #848484;
+}
+
+#content h2 {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 45px;
+}
+#content h3 {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 36px;
+	color: #8c8e8d;
+}
+#content address {
+	margin-bottom: 7px;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 27px;
+	color: #8c8e8d;
+}
+#content p {
+	font-size: 14px;
+	line-height: 25px;
+	text-indent: 2em;
+}
+#content article img {
+	width: 302px;
+	height: 242px;
+	margin-top: 17px;
+	margin-bottom: 14px;
+}
+
+.lis li {
+	margin-left: 22px;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+section figure {
+	width: 120px;
+	height: 124px;
+	margin-left: 41px;
+	margin-bottom: 15px;
+	border: 1px solid #cdcdcd;
+	text-align: center;
+}
+section figure:nth-of-type(1) {
+	margin-top: 12px;
+}
+section figure:last-of-type {
+	margin-bottom: 0;
+}
+section figure figcaption {
+	font-size: 11px;
+	line-height: 34px;
+}
+section figure img {
+	width: 100px;
+	height: 81px;
 }
