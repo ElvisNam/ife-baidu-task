@@ -113,14 +113,16 @@
 			<h2>最后一篇文章一级标题</h2>
 			<h3>文章二级标题</h3>
 			<address>文章作者 文章发表时间</address>
+
 			<ol>
 				<li>排名1</li>
 				<li>排名2</li>
 				<li>排名3</li>
 			</ol>
+
 			<p>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</p>
 
-			<table border = "1">
+			<table class = "tab">
 				<thead>
 					<tr>
 						<th>表头</th>
@@ -150,44 +152,48 @@
 						<td>表内容单元格</td>
 						<td><a href = "#">操作</a></td>
 					</tr>
+				</tbody>
+
+				<tfoot>
 					<tr>
 						<td>总计</td>
 						<td colspan = "2">1000</td>
 					</tr>
-				</tbody>
+				</tfoot>
 			</table>
 		</article>
 
 		<aside>
 			<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
-			<h3>侧栏注册窗口表题</h3>
 
 			<form>
-				<label>
-					请输入邮箱地址：
-					<input type = "text" name = "text1" value = "这是一个文本输入框">
-				</label>
+				<div calss = "form">
+					<label>
+						请输入邮箱地址：
+						<input type = "text" name = "text1" value = "这是一个文本输入框">
+					</label>
 
-				<p>邮箱地址请按要求格式输入</p>
+					<p>邮箱地址请按要求格式输入</p>
 
-				<label>
-					请输入密码：
-					<input type = "password" name = "password1" value = "这是一个文本输入框">
-				</label>
+					<label>
+						请输入密码：
+						<input type = "password" name = "password1" value = "这是一个文本输入框">
+					</label>
+					<br>
 
-				<label>
-					请重复输入密码：
-					<input type = "password" name = "password2" value = "这是一个文本输入框">
-				</label>
-				<p>密码请为6-16位英文数字</p>
-				
-				<div>
+					<label>
+						请重复输入密码：
+						<input type = "password" name = "password2" value = "这是一个文本输入框">
+					</label>
+					<p>密码请为6-16位英文数字</p>
+					
 					性别：
 					<label for = "male">男</label>
 					<input id = "male" type = "radio" name = "sex" value = "male">
 
 					<label for = "female">女</label>
 					<input id = "female" type = "radio" name = "sex" value = "female">
+					<br>
 
 					<label for = "city">城市</label>
 					<select id = "city">
@@ -195,6 +201,7 @@
 						<option value = "Shanghai">上海</option>
 						<option value = "Guangzhou">广州</option>
 					</select>
+					<br>
 
 					爱好：
 					<input id = "sports" type = "checkbox" name = "hobby" value = "sports">
@@ -203,17 +210,18 @@
 					<label for = "art">艺术</label>
 					<input id = "science" type = "checkbox" name = "hobby" value = "science">
 					<label for = "science">科学</label>
+					<br>
 
 					<label>
 						个人描述：
 						<textarea>这是一个多行输入框，输入您的个人描述</textarea>
-					</label>
+					</label>	
 
-					<input type = "submit" value = "确认提交">
+					<input class = "sub" type = "submit" value = "确认提交">
 				</div>
 			</form>
 		</aside>
-	</article>
+	</div>
 
 	<footer>版权所有&copy</footer> 
 </body>
