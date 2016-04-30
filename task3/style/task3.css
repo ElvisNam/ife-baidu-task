@@ -1,0 +1,110 @@
+/* TASK3 CSS DOCUMENT */
+body, 
+section, 
+div,
+p,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	font: 14px "Microsoft Yahei";
+}
+
+ul, li {
+	list-style: none;
+}
+
+
+.clearfix:after {
+	content: " ";
+	display: table;
+	clear: both;
+	*zoom: 1;
+}
+
+
+section.box {
+	min-width: 400px;
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #999;
+	background-color: #eee;
+}
+
+
+.box .wrap {
+	width: 100%;
+	float: left;
+}
+
+
+.wrap .team {
+	/* 200 - 20 * 2 */
+	width: 160px;
+	padding: 20px;
+	border: 1px solid #999;
+	background-color: #fff;
+	float: left;
+}
+
+.wrap .team .logo {
+	/* 80 - 20 * 2 */
+	width: 40px;
+	height: 40px;
+	padding: 20px;
+	border: 1px solid #999;
+	background-color: #eee;
+	text-align: center;
+	float: left;
+}
+
+.wrap .team .team-name {
+	/* 80 + 1 * 2 + 20  */
+	margin-left: 100px;
+}
+
+
+.wrap .introduce {
+	padding: 20px;
+	/* 200 + 1 * 2 + 20 */
+	margin-left: 222px;
+	/* 120 + 1 * 2 + 20 */
+	margin-right: 142px;
+	border: 1px solid #999;
+	background-color: #fff;
+}
+
+.wrap .introduce p {
+	margin-bottom: 20px;
+}
+
+.wrap .introduce p:last-of-type {
+	margin-bottom: 0;
+}
+
+
+.box .personage {
+	/* 120 - 20 * 2 */
+	width: 80px;
+	/* 120 + 1 * 2 */
+	margin-left: -122px;
+	padding: 20px;
+	border: 1px solid #999;
+	float: left;
+	background-color: #fff
+}
+
+.personage .list li {
+	/* 80 - 20 * 2 */
+	width: 40px;
+	height: 40px;
+	padding: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #999;
+	background-color: #eee;
+	text-align: center;
+}
+
+.personage .list li:last-of-type {
+	margin-bottom: 0;
+}
