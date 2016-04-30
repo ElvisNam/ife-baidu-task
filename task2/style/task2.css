@@ -216,13 +216,41 @@ section figure img {
 	font-size: 15px;
 	line-height: 38px;
 }
-/*aside .form {
-	position: relative;
+
+aside .form {
+	width: 100%;
 }
-aside .form input {
-	position: absolute;
-	left: 368px;
-}*/
+
+aside .form .wrap {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+aside .left {
+	float: left;
+	width: 40%;
+	text-align: right;
+}
+
+aside .right {
+	text-align: left;
+} 
+
+#content aside p.right {
+	width: 100%;
+	margin-left: 40%;
+	margin-bottom: 20px;
+	padding: 0;
+	text-indent: 0;
+	float: none;
+	color: #a8a59c;
+}
+
+#content aside textarea {
+	width: 50%;
+	height: 98px;
+}
 
 aside .sub {
 	width: 100%;
@@ -248,4 +276,11 @@ footer {
 	line-height: 70px;
 	text-align: center;
 	color: #fff;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+	*zoom: 1;
 }

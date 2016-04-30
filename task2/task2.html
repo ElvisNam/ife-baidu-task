@@ -167,56 +167,68 @@
 			<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
 
 			<form>
-				<div class = "form">
-					<label>
-						请输入邮箱地址：	
-						<input type = "text" name = "text1" value = "这是一个文本输入框">
+				<div class = "form clearfix">
+
+					<label class = "wrap clearfix">
+						<span class = "left">请输入邮箱地址：</span>
+						<span class = "right"><input type = "text" name = "text1" placeholder = "这是一个文本输入框"></span>
 					</label>
 					
-					<p>邮箱地址请按要求格式输入</p>
+					<p class = "right">邮箱地址请按要求格式输入</p>
 
-					<label>
-						请输入密码：				
-						<input type = "password" name = "password1" value = "这是一个文本输入框">
+					<label class = "wrap clearfix">
+						<span class = "left">请输入密码：</span>				
+						<span class = "right"><input type = "password" name = "password1" placeholder = "请输入密码"></span>
 					</label>
-					<br>
 
-					<label>
-						请重复输入密码：
-						<input type = "password" name = "password2" value = "这是一个文本输入框">
-					</label>					
-					<p>密码请为6-16位英文数字</p>
+					<label class = "wrap clearfix">
+						<span class = "left">请重复输入密码：</span>
+						<span class = "right"><input type = "password" name = "password2" placeholder = "请重复输入密码"></span>
+					</label>
+
+					<p class = "right">密码请为6-16位英文数字</p>
 					
-					性别：
-					<label for = "male">男</label>
-					<input id = "male" type = "radio" name = "sex" value = "male">
+					<div class = "wrap clearfix">
+						<span class = "left">性别：</span>
+						<div class = "right">
+							<label for = "male">男</label>
+							<input id = "male" type = "radio" name = "sex" value = "male">
+							<label for = "female">女</label>
+							<input id = "female" type = "radio" name = "sex" value = "female">
+						</div>
+					</div>
+					
+					<div class = "wrap clearfix">
+						<label class = "left" for = "city">城市：</label>
+						<span class = "right">
+							<select id = "city">
+								<option value = "Beijing">北京</option>
+								<option value = "Shanghai">上海</option>
+								<option value = "Guangzhou">广州</option>
+							</select>
+						</span>
+					</div>
+					
+					<div class = "wrap clearfix">
+						<span class = "left">爱好：</span>
+						<span class = "right">
+							<input id = "sports" type = "checkbox" name = "hobby" value = "sports">
+							<label for = "sports">运动</label>
+							<input id = "art" type = "checkbox" name = "hobby" value = "art">
+							<label for = "art">艺术</label>
+							<input id = "science" type = "checkbox" name = "hobby" value = "science">
+							<label for = "science">科学</label>
+						</span>
+					</div>
 
-					<label for = "female">女</label>
-					<input id = "female" type = "radio" name = "sex" value = "female">
-					<br>
-
-					<label for = "city">城市</label>
-					<select id = "city">
-						<option value = "Beijing">北京</option>
-						<option value = "Shanghai">上海</option>
-						<option value = "Guangzhou">广州</option>
-					</select>
-					<br>
-
-					爱好：
-					<input id = "sports" type = "checkbox" name = "hobby" value = "sports">
-					<label for = "sports">运动</label>
-					<input id = "art" type = "checkbox" name = "hobby" value = "art">
-					<label for = "art">艺术</label>
-					<input id = "science" type = "checkbox" name = "hobby" value = "science">
-					<label for = "science">科学</label>
-					<br>
-
-					<label>
-						个人描述：
-						<textarea>这是一个多行输入框，输入您的个人描述</textarea>
+					<label class = "wrap clearfix">
+						<span class = "left">个人描述：</span>
+						<div class = "right">
+							<textarea placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+						</div>
 					</label>	
 				</div>
+
 				<input class = "sub" type = "submit" value = "确认提交">
 			</form>
 		</aside>
