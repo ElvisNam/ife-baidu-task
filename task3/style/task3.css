@@ -1,4 +1,5 @@
 /* TASK3 CSS DOCUMENT */
+/* reset */
 body, 
 section, 
 div,
@@ -14,97 +15,82 @@ ul, li {
 	list-style: none;
 }
 
-
+/* 公共类设置 */
 .clearfix:after {
-	content: " ";
+	content: "";
 	display: table;
 	clear: both;
+}
+.clearfix {
 	*zoom: 1;
 }
 
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
 
-section.box {
+/* 局部设置 */
+.container {
 	min-width: 400px;
 	margin: 20px;
 	padding: 20px;
-	border: 1px solid #999;
 	background-color: #eee;
+	border: 1px solid #999;
 }
 
-
-.box .wrap {
+.main-wrap {
 	width: 100%;
-	float: left;
 }
-
-
-.wrap .team {
-	/* 200 - 20 * 2 */
-	width: 160px;
+.aside-wrap {
+	width: 78px;
+	margin-left: -120px;
 	padding: 20px;
 	border: 1px solid #999;
 	background-color: #fff;
-	float: left;
 }
 
-.wrap .team .logo {
-	/* 80 - 20 * 2 */
-	width: 40px;
-	height: 40px;
+.team-wrap {
+	width: 158px;
+	border: 1px solid #999;
+	background-color: #fff;
+	padding: 20px;
+}
+.team-wrap .logo {
+	width: 38px;
+	height: 38px;
 	padding: 20px;
 	border: 1px solid #999;
 	background-color: #eee;
-	text-align: center;
 	float: left;
 }
-
-.wrap .team .team-name {
-	/* 80 + 1 * 2 + 20  */
+.team-wrap .intro {
 	margin-left: 100px;
 }
-
-
-.wrap .introduce {
-	padding: 20px;
-	/* 200 + 1 * 2 + 20 */
-	margin-left: 222px;
-	/* 120 + 1 * 2 + 20 */
-	margin-right: 142px;
+.intro-wrap {
+	margin-left: 220px;
+	margin-right: 140px;
 	border: 1px solid #999;
 	background-color: #fff;
+	padding: 20px;
 }
-
-.wrap .introduce p {
+.intro-wrap p {
 	margin-bottom: 20px;
 }
-
-.wrap .introduce p:last-of-type {
+.intro-wrap p:last-of-type {
 	margin-bottom: 0;
 }
-
-
-.box .personage {
-	/* 120 - 20 * 2 */
-	width: 80px;
-	/* 120 + 1 * 2 */
-	margin-left: -122px;
-	padding: 20px;
-	border: 1px solid #999;
-	float: left;
-	background-color: #fff
-}
-
-.personage .list li {
-	/* 80 - 20 * 2 */
-	width: 40px;
-	height: 40px;
+.aside-wrap .logo {
+	width: 38px;
+	height: 38px;
 	padding: 20px;
 	margin-bottom: 20px;
 	border: 1px solid #999;
 	background-color: #eee;
 	text-align: center;
 }
-
-.personage .list li:last-of-type {
+.aside-wrap .logo:last-of-type {
 	margin-bottom: 0;
 }
